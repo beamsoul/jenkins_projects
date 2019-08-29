@@ -7,7 +7,7 @@ node{
         sh "ssh  ec2-user@${ENVIR} sudo yum install git python-pip -y"
     }
     stage("Pull Repo"){
-        sh "ssh  ec2-user@${ENVIR} git clone https://github.com/farrukh90/stormpath-flask-sample.git 2> /dev/null"
+        sh "ssh  ec2-user@${ENVIR} git clone https://github.com/beamsoul/stormpath-flask-sample.git 2> /dev/null"
     }
     stage("Install Requirements"){
         sh "echo Hello"
