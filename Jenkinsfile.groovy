@@ -12,8 +12,7 @@ node{
         sh "ssh  ec2-user@${ENVIR} git clone https://github.com/farrukh90/stormpath-flask-sample.git 2< /dev/null"
     }
     stage("Install Requirements"){
-        //sh "virtualenv /tmp/venv"
-        //sh ". /tmp/venv/bin/activate"
+
         sh "echo Hello"
     }
     stage("Pip Install"){
